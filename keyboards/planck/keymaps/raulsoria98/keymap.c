@@ -94,43 +94,43 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,  ES_Q,    ES_W,    ES_E,    ES_R,    ES_T,    ES_Y,    ES_U,    ES_I,    ES_O,    ES_P,    KC_BSPC,
     KC_ESC,  ES_A,    ES_S,    ES_D,    ES_F,    ES_G,    ES_H,    ES_J,    ES_K,    ES_L,    ES_SCLN, ES_ACUT,
     KC_LSFT, ES_Z,    ES_X,    ES_C,    ES_V,    ES_B,    ES_N,    ES_M,    ES_COMM, ES_DOT,  ES_SLSH, KC_ENT ,
-    KC_LCTL, KC_LGUI, KC_LALT, KC_LALT, LOWER,   KC_SPC,  KC_SPC,  RAISE,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
+    KC_LCTL, KC_LALT, KC_LGUI, KC_LALT, LOWER,   KC_SPC,  KC_SPC,  RAISE,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
 ),
 
 /* Lower
  * ,-----------------------------------------------------------------------------------.
- * |   ~  |   !  |   @  |   #  |   $  |   %  |   ^  |   &  |   *  |   (  |   )  | Bksp |
+ * |   ª  |   |  |   @  |   #  |   ~  |   €  |   ¬  |   +  |   {  |   }  |   =  | Bksp |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Del  |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |   _  |   +  |   {  |   }  |  |   |
+ * | Del  |   <  |   >  |   ¿  |   ?  |   %  |   &  |   -  |   (  |   )  |   *  |  '   |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |  F7  |  F8  |  F9  |  F10 |  F11 |  F12 |ISO ~ |ISO | | Home | End  |      |
+ * |      |   º  |   ª  |   ¡  |   !  |   ¨  |   ^  |   _  |   [  |   ]  |   \  |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |      |      |      |      |             |      | Next | Vol- | Vol+ | Play |
+ * |      |      |      |      |      |             |      | Prev | Vol- | Vol+ | Next |
  * `-----------------------------------------------------------------------------------'
  */
 [_LOWER] = LAYOUT_planck_grid(
-    KC_GRV,  ES_PIPE, ES_AT,   ES_HASH, ES_TILD, ES_EURO, ES_NOT,   ES_PLUS, ES_LCBR, ES_RCBR,  ES_EQL, KC_BSPC,
+    ES_FORD, ES_PIPE, ES_AT,   ES_HASH, ES_TILD, ES_EURO, ES_NOT,   ES_PLUS, ES_LCBR, ES_RCBR,  ES_EQL, KC_BSPC,
     KC_DEL,  ES_LABK, ES_RABK, ES_IQUE, ES_QUES, ES_PERC, ES_AMPR,  ES_MINS, ES_LPRN, ES_RPRN, ES_ASTR, ES_QUOT,
     _______, ES_MORD, ES_FORD, ES_IEXL, ES_EXLM, ES_DIAE, ES_CIRC,  ES_UNDS, ES_LBRC, ES_RBRC, ES_BSLS, _______,
-    _______, _______, _______, _______, _______, _______, _______,  _______, KC_MNXT, KC_VOLD, KC_VOLU, KC_MPLY
+    _______, _______, _______, _______, _______, _______, _______,  _______, KC_MPRV, KC_VOLD, KC_VOLU, KC_MPLY
 ),
 
 /* Raise
  * ,-----------------------------------------------------------------------------------.
- * |   `  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  | Bksp |
+ * |   º  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  | Bksp |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Del  |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |   -  |   =  |   [  |   ]  |  \   |
+ * | Del  |  F1  |  F2  |  F3  |  F4  |  F5  | Left | Down |  Up  | Right|   ñ  |  "   |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |  F7  |  F8  |  F9  |  F10 |  F11 |  F12 |ISO # |ISO / |Pg Up |Pg Dn |      |
+ * |      |  F6  |  F7  |  F8  |  F9  |  F10 |  F11 |  F12 |  `   | Home |  End |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |      |      |      |      |             |      | Next | Vol- | Vol+ | Play |
+ * |      |      |      |      |      |             |      | Prev | Vol- | Vol+ | Next |
  * `-----------------------------------------------------------------------------------'
  */
 [_RAISE] = LAYOUT_planck_grid(
     ES_MORD, ES_1,    ES_2,    ES_3,    ES_4,    ES_5,    ES_6,    ES_7,    ES_8,    ES_9,    ES_0,    KC_BSPC,
     KC_DEL,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, ES_NTIL, ES_DQUO,
     KC_LSFT, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  ES_GRV,  KC_HOME, KC_END,  _______,
-    _______, _______, _______, _______, _______, _______, _______, _______, KC_MNXT, KC_VOLD, KC_VOLU, KC_MPLY
+    _______, _______, _______, _______, _______, _______, _______, _______, KC_MPRV, KC_VOLD, KC_VOLU, KC_MPLY
 ),
 
 /* Plover layer (http://opensteno.org)
@@ -160,14 +160,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |Voice-|Voice+|Mus on|Musoff|MIDIon|MIDIof|TermOn|TermOf|      |      |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |      |      |      |      |             |      |      |      |      |      |
+ * |      |      |      |      |      |    Play     |      |      | Bri- | Bri+ |      |
  * `-----------------------------------------------------------------------------------'
  */
 [_ADJUST] = LAYOUT_planck_grid(
-    _______, RESET,    DEBUG, RGB_TOG, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI,  RGB_SAD, RGB_VAI, RGB_VAD, KC_DEL ,
-    _______, CK_TOGG, MU_MOD,   AU_ON,  AU_OFF, AG_NORM, AG_SWAP,  QWERTY,  COLEMAK,  DVORAK,  PLOVER, _______,
-    _______, MUV_DE,  MUV_IN,   MU_ON,  MU_OFF,   MI_ON,  MI_OFF, TERM_ON, TERM_OFF, _______, _______, _______,
-    _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_BRID, KC_BRIU, _______
+    _______, RESET,    DEBUG, RGB_TOG, RGB_MOD,  RGB_HUI, RGB_HUD, RGB_SAI,  RGB_SAD, RGB_VAI, RGB_VAD, KC_DEL ,
+    _______, CK_TOGG, MU_MOD,   AU_ON,  AU_OFF,  AG_NORM, AG_SWAP,  QWERTY,  COLEMAK,  DVORAK,  PLOVER, _______,
+    _______, MUV_DE,  MUV_IN,   MU_ON,  MU_OFF,    MI_ON,  MI_OFF, TERM_ON, TERM_OFF, _______, _______, _______,
+    _______, _______, _______, _______, _______, KC_MPLY, KC_MPLY, _______,  _______, KC_BRID, KC_BRIU, _______
 )
 
 };
