@@ -103,7 +103,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * | Del  |   <  |   >  |   ¿  |   ?  |   %  |   &  |   -  |   (  |   )  |   *  |  '   |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |   º  |   ª  |   ¡  |   !  |   ¨  |   ^  |   _  |   [  |   ]  |   \  |      |
+ * |      |   $  |   º  |   ¡  |   !  |   ¨  |   ^  |   _  |   [  |   ]  |   \  |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |      |      |      |      |             |      | Prev | Vol- | Vol+ | Next |
  * `-----------------------------------------------------------------------------------'
@@ -111,7 +111,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_LOWER] = LAYOUT_planck_grid(
     ES_FORD, ES_PIPE, ES_AT,   ES_HASH, ES_TILD, ES_EURO, ES_NOT,   ES_PLUS, ES_LCBR, ES_RCBR,  ES_EQL, KC_BSPC,
     KC_DEL,  ES_LABK, ES_RABK, ES_IQUE, ES_QUES, ES_PERC, ES_AMPR,  ES_MINS, ES_LPRN, ES_RPRN, ES_ASTR, ES_QUOT,
-    _______, ES_MORD, ES_FORD, ES_IEXL, ES_EXLM, ES_DIAE, ES_CIRC,  ES_UNDS, ES_LBRC, ES_RBRC, ES_BSLS, _______,
+    _______,  ES_DLR, ES_MORD, ES_IEXL, ES_EXLM, ES_DIAE, ES_CIRC,  ES_UNDS, ES_LBRC, ES_RBRC, ES_BSLS, _______,
     _______, _______, _______, _______, _______, _______, _______,  _______, KC_MPRV, KC_VOLD, KC_VOLU, KC_MPLY
 ),
 
