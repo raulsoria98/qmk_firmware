@@ -112,7 +112,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ES_FORD, ES_PIPE, ES_AT,   ES_HASH, ES_TILD, ES_EURO, ES_NOT,   ES_PLUS, ES_LCBR, ES_RCBR,  ES_EQL, KC_BSPC,
     KC_DEL,  ES_LABK, ES_RABK, ES_IQUE, ES_QUES, ES_PERC, ES_AMPR,  ES_MINS, ES_LPRN, ES_RPRN, ES_ASTR, ES_QUOT,
     _______,  ES_DLR, ES_GRV, ES_IEXL, ES_EXLM, ES_DIAE, ES_CIRC,  ES_UNDS, ES_LBRC, ES_RBRC, ES_BSLS, _______,
-    _______, _______, _______, _______, _______, _______, _______,  _______, KC_MPRV, KC_VOLD, KC_VOLU, KC_MPLY
+    _______, _______, _______, _______, _______, _______, _______,  _______, KC_MPRV, KC_VOLD, KC_VOLU, KC_MNXT
 ),
 
 /* Raise
@@ -130,7 +130,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ES_MORD, ES_1,    ES_2,    ES_3,    ES_4,    ES_5,    ES_6,    ES_7,    ES_8,    ES_9,    ES_0,    KC_BSPC,
     KC_DEL,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, ES_NTIL, ES_DQUO,
     KC_LSFT, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  ES_GRV,  KC_HOME, KC_END,  _______,
-    _______, _______, _______, _______, _______, _______, _______, _______, KC_MPRV, KC_VOLD, KC_VOLU, KC_MPLY
+    _______, _______, _______, _______, _______, _______, _______, _______, KC_MPRV, KC_VOLD, KC_VOLU, KC_MNXT
 ),
 
 /* Plover layer (http://opensteno.org)
